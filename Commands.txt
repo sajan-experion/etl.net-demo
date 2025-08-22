@@ -1,0 +1,3 @@
+dotnet tool install -g microsoft.sqlpackage
+
+sqlpackage /Action:Publish /SourceFile:DbProject.dacpac /TargetConnectionString:"Server=localhost\SQLEXPRESS;Database=etljobDb;Trusted_Connection=True;Encrypt=True;TrustServerCertificate=True;MultipleActiveResultSets=true;" /p:ScriptDatabaseOptions=False
